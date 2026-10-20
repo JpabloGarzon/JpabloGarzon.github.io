@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juan Pablo Garzón Cardona | Ingeniero de Sistemas y Desarrollador Full-Stack</title>
+<meta name="description" content="Hoja de vida en línea de Juan Pablo Garzón Cardona, ingeniero de sistemas y desarrollador full-stack junior en Pereira, Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6fb; --surface:#ffffff; --ink:#18212f; --muted:#556070;
+  --navy:#14233f; --accent:#1c7c8c; --accent-ink:#ffffff; --line:#d9e0ec; --chip:#e6eef7;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1422; --surface:#161e30; --ink:#e8edf6; --muted:#9aa7bb;
+    --navy:#0a1020; --accent:#4cc0d1; --accent-ink:#0a1020; --line:#27324a; --chip:#1f2a42; }
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.05rem;line-height:1.6}
+h1,h2,h3,.brand{font-family:"Sora",system-ui,sans-serif;letter-spacing:-.01em}
+a{color:var(--accent)}
+.hero{background:var(--navy);color:#fff;padding:3rem 0 2.5rem}
+.hero .role{color:#c7d3e6;font-size:1.15rem;margin:.25rem 0 1rem}
+.avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);background:var(--chip);flex:none}
+.avatar-fallback{display:none;width:132px;height:132px;border-radius:50%;border:4px solid var(--accent);align-items:center;justify-content:center;font:700 2.2rem "Sora",sans-serif;background:var(--chip);color:var(--navy);flex:none}
+.hero .meta a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.hero .meta span{margin-right:1.25rem;display:inline-block}
+.btn-cv{background:var(--accent);color:var(--accent-ink);font-weight:600;border:0}
+.btn-cv:hover{filter:brightness(1.1);color:var(--accent-ink)}
+.tabs-bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding:.6rem 0}
+.nav-pills{flex-wrap:nowrap;overflow-x:auto;gap:.25rem}
+.nav-pills .nav-link{color:var(--ink);white-space:nowrap;font-weight:600;border-radius:.5rem}
+.nav-pills .nav-link:hover{background:var(--chip)}
+.nav-pills .nav-link.active{background:var(--accent);color:var(--accent-ink)}
+.nav-link:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:.75rem;padding:1.75rem}
+.panel h2{font-size:1.5rem;margin-bottom:1rem}
+.lead-text{max-width:70ch}
+.timeline{border-left:3px solid var(--accent);margin-left:.4rem;padding-left:1.5rem}
+.job{position:relative;margin-bottom:2rem}
+.job:last-child{margin-bottom:0}
+.job::before{content:"";position:absolute;left:-1.95rem;top:.45rem;width:.85rem;height:.85rem;border-radius:50%;background:var(--accent);border:3px solid var(--surface)}
+.job h3{font-size:1.15rem;margin:0}
+.job .where{color:var(--muted);margin-bottom:.4rem}
+.chip{display:inline-block;background:var(--chip);color:var(--ink);border-radius:2rem;padding:.2rem .85rem;margin:.2rem .15rem;font-size:.95rem}
+.skill-group{margin-bottom:1.25rem}
+.skill-group h3{font-size:1.05rem;margin-bottom:.4rem}
+.edu-item{padding:.75rem 0;border-bottom:1px solid var(--line)}
+.edu-item:last-child{border-bottom:0}
+.edu-item .school{color:var(--muted)}
+footer{color:var(--muted);font-size:.9rem;padding:2rem 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-4">
+      <img class="avatar" src="foto.jpg" alt="Foto de Juan Pablo Garzón Cardona"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="avatar-fallback" aria-hidden="true">JG</div>
+      <div>
+        <h1 class="display-5 fw-bold mb-0">Juan Pablo Garzón Cardona</h1>
+        <p class="role">Ingeniero de Sistemas y Desarrollador full-stack junior</p>
+        <p class="meta mb-3">
+          <span>Pereira, Colombia</span>
+          <span><a href="mailto:juancardona0190@gmail.com">juancardona0190@gmail.com</a></span>
+          <span><a href="tel:+573112738873">+57 311 273 8873</a></span>
+        </p>
+        <a class="btn btn-cv" href="CV_Juan_pablo_garzon.pdf" download>Descargar hoja de vida (PDF)</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="tabs-bar">
+  <div class="container">
+    <ul class="nav nav-pills" id="tabs" role="tablist">
+      <li class="nav-item" role="presentation"><button class="nav-link active" id="t-perfil" data-bs-toggle="pill" data-bs-target="#perfil" type="button" role="tab" aria-controls="perfil" aria-selected="true">Perfil</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="t-experiencia" data-bs-toggle="pill" data-bs-target="#experiencia" type="button" role="tab" aria-controls="experiencia" aria-selected="false">Experiencia</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="t-formacion" data-bs-toggle="pill" data-bs-target="#formacion" type="button" role="tab" aria-controls="formacion" aria-selected="false">Formación</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="t-habilidades" data-bs-toggle="pill" data-bs-target="#habilidades" type="button" role="tab" aria-controls="habilidades" aria-selected="false">Habilidades</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" id="t-contacto" data-bs-toggle="pill" data-bs-target="#contacto" type="button" role="tab" aria-controls="contacto" aria-selected="false">Contacto</button></li>
+    </ul>
+  </div>
+</div>
+
+<main class="container my-4">
+  <div class="tab-content">
+
+    <section class="tab-pane fade show active" id="perfil" role="tabpanel" aria-labelledby="t-perfil" tabindex="0">
+      <div class="panel">
+        <h2>Perfil profesional</h2>
+        <p class="lead-text">Ingeniero de Sistemas graduado con experiencia en desarrollo y mantenimiento de soluciones web, soporte técnico a usuarios, diagnóstico de incidentes y apoyo a infraestructura tecnológica.</p>
+        <p class="lead-text">Trabajo con PHP, JavaScript, MySQL, HTML, CSS y Laravel, y también instalo y configuro redes. Participé en soporte tecnológico durante procesos electorales (Integración Logística Electoral) y en labores de asistencia en sistemas de información.</p>
+        <p class="lead-text">Aprendo de forma autónoma, me organizo bien y me gusta resolver problemas.</p>
+        <h3 class="h6 mt-4">Cargos que busco</h3>
+        <div>
+          <span class="chip">Soporte técnico TI</span>
+          <span class="chip">Analista de procesos TI o gestión de procesos</span>
+          <span class="chip">Desarrollador web junior</span>
+          <span class="chip">Mesa de ayuda / soporte de sistemas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-pane fade" id="experiencia" role="tabpanel" aria-labelledby="t-experiencia" tabindex="0">
+      <div class="panel">
+        <h2>Experiencia laboral</h2>
+        <div class="timeline">
+          <article class="job">
+            <h3>Profesional de TI: desarrollo de software y soporte técnico</h3>
+            <div class="where">Iluminar Ingeniería D.M. S.A.S. · Octubre 2025 – Octubre 2026</div>
+            <ul>
+              <li>Desarrollo y mantenimiento de soluciones de software según las necesidades de la empresa.</li>
+              <li>Soporte técnico a usuarios y equipos: diagnóstico y solución de incidentes de hardware, software y sistemas.</li>
+              <li>Instalación, configuración y mantenimiento de herramientas y aplicaciones informáticas.</li>
+              <li>Apoyo a la gestión de recursos tecnológicos y seguimiento de requerimientos de TI.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <h3>Técnico instalador: soporte técnico</h3>
+            <div class="where">Compsys · Noviembre 2024 – Febrero 2025</div>
+            <ul>
+              <li>Configuración de routers y puertos IP.</li>
+              <li>Instalación de fibra óptica y cableado UTP.</li>
+              <li>Atención de solicitudes de soporte a usuarios y apoyo en la solución de incidencias técnicas.</li>
+            </ul>
+          </article>
+          <article class="job">
+            <h3>Desarrollador web y de software (full-stack)</h3>
+            <div class="where">PFC Insumos Agrícolas · Noviembre 2022 – Mayo 2023</div>
+            <ul>
+              <li>Desarrollo y mantenimiento de la página web empresarial.</li>
+              <li>Implementación de funcionalidades con PHP, JavaScript y MySQL.</li>
+              <li>Gestión y organización de bases de datos.</li>
+              <li>Optimización de procesos digitales de la empresa.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-pane fade" id="formacion" role="tabpanel" aria-labelledby="t-formacion" tabindex="0">
+      <div class="panel">
+        <h2>Formación</h2>
+        <div class="edu-item">
+          <strong>Ingeniería de Sistemas</strong>
+          <div class="school">Corporación de Estudios Tecnológicos (Cotecnova)</div>
+        </div>
+        <div class="edu-item">
+          <strong>Protección Integral de la Información (PII)</strong>
+          <div class="school">Corporación de Estudios Tecnológicos (Cotecnova)</div>
+        </div>
+        <div class="edu-item">
+          <strong>Técnico en Contabilización de Operaciones Comerciales y Financieras</strong>
+          <div class="school">SENA</div>
+        </div>
+        <h3 class="h6 mt-4">Documentos adicionales</h3>
+        <span class="chip">Libreta militar: sí</span>
+        <span class="chip">Tarjeta profesional: sí</span>
+      </div>
+    </section>
+
+    <section class="tab-pane fade" id="habilidades" role="tabpanel" aria-labelledby="t-habilidades" tabindex="0">
+      <div class="panel">
+        <h2>Habilidades</h2>
+        <div class="skill-group">
+          <h3>Desarrollo web</h3>
+          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Bootstrap</span>
+          <span class="chip">JavaScript</span><span class="chip">PHP</span><span class="chip">Laravel</span>
+          <span class="chip">C#</span><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">Git y GitHub</span>
+        </div>
+        <div class="skill-group">
+          <h3>Redes e infraestructura</h3>
+          <span class="chip">Instalación de fibra óptica</span><span class="chip">Cableado UTP</span>
+          <span class="chip">Radiofrecuencia</span><span class="chip">Routers y repetidores</span><span class="chip">Cámaras</span>
+        </div>
+        <div class="skill-group">
+          <h3>Seguridad</h3>
+          <span class="chip">Kali Linux</span><span class="chip">Herramientas de análisis de vulnerabilidades</span>
+        </div>
+        <div class="skill-group">
+          <h3>Ofimática</h3>
+          <span class="chip">Excel</span><span class="chip">Word</span><span class="chip">PowerPoint</span><span class="chip">Access</span>
+        </div>
+        <div class="skill-group">
+          <h3>Habilidades blandas</h3>
+          <span class="chip">Comunicación efectiva</span><span class="chip">Trabajo en equipo</span>
+          <span class="chip">Organización y gestión del tiempo</span><span class="chip">Autodidacta</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-pane fade" id="contacto" role="tabpanel" aria-labelledby="t-contacto" tabindex="0">
+      <div class="panel">
+        <h2>Contacto</h2>
+        <p class="lead-text">Escríbeme o llámame para hablar de una vacante o un proyecto.</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><strong>Correo:</strong> <a href="mailto:juancardona0190@gmail.com">juancardona0190@gmail.com</a></li>
+          <li class="mb-2"><strong>Teléfono:</strong> <a href="tel:+573112738873">+57 311 273 8873</a></li>
+          <li class="mb-2"><strong>Ciudad:</strong> Pereira, Colombia</li>
+          <li class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/JpabloGarzon" target="_blank" rel="noopener">github.com/JpabloGarzon</a></li>
+        </ul>
+        <a class="btn btn-cv mt-2" href="CV_Juan_pablo_garzon.pdf" download>Descargar hoja de vida (PDF)</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> Juan Pablo Garzón Cardona. Hecho con HTML5, CSS3, Bootstrap y JavaScript.</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Abre la pestaña indicada en el enlace (por ejemplo, index.html#experiencia)
+(function () {
+  var hash = location.hash.replace('#', '');
+  if (hash) {
+    var btn = document.querySelector('[data-bs-target="#' + hash + '"]');
+    if (btn) bootstrap.Tab.getOrCreateInstance(btn).show();
+  }
+  document.querySelectorAll('#tabs [data-bs-toggle="pill"]').forEach(function (b) {
+    b.addEventListener('shown.bs.tab', function (e) {
+      history.replaceState(null, '', e.target.getAttribute('data-bs-target'));
+    });
+  });
+})();
+</script>
+</body>
+</html>
